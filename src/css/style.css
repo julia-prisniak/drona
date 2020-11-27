@@ -292,7 +292,7 @@ nav {
 }
 
 .quote{
-    position: absolute;
+    position: relative;
     display: flex;
     background: red;
     min-height: 300px;
@@ -308,7 +308,7 @@ nav {
     border: 1px solid red;
 }
 .quote p{
-    position: relative;
+    position: absolute;
     width: 300px;
     font-family: Roboto;
     font-size: 18px;
@@ -377,20 +377,16 @@ nav {
     bottom: -50%;
     left: 0;
 }
-.footer .background{
+.wrap .background{
     position: absolute;
     padding-bottom: 5263px;
     z-index: -100;
-   margin-left: -513px;
-   margin-top: 0px;
-   margin-left: -513px;
-   margin-bottom: -650px;
+    margin-left: -513px;
+    margin-top: 0px;
+    margin-left: -513px;
+    margin-bottom: -650px;
+    overflow: hidden;
 }
-hr{
-    size: 3px;
-    color: white;
-}
-
 
 
 
