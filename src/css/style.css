@@ -1,25 +1,406 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
-nav{
-    width: 1920px;
+
+nav {
+    max-width: 1920px;
+    width: 100%;
     margin: auto;
     padding-top: 50px;
-    padding-left: 140px; 
-    padding-right: 140px; 
+    padding-left: 140px;
+    padding-right: 140px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 127px;
+    
 }
-.user{
+.user a:visited{
+    color: #4A4A4A;
+}
+
+.user a.button{
+    width: 150px;
+    height: 40px;
+    background-color: #4C56C0;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
 
 }
-.menu{
+
+.workplace-img{
+    left: -60px;
+}
+
+.menu {
+    font-family: Raleway;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.menu a {
+    margin-right: 70px;
+    text-decoration: none;
+    font-size: 23px;
+}
+.menu a:visited{
+    color: #4A4A4A;
+}
+
+.user{
+    font-family: Raleway;
+    margin-left: auto;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.user a , .user button{
+    font-family: Raleway;
+    text-decoration: none;
+    font-size: 23px;
+    margin-left: 35px;
+}
+
+.logo {
+    margin-right: 76px;
+}
+
+.text-section{
+    padding-left: 140px;
+}
+.text-section h1{
+    width: 1000px;
+    margin-bottom: 55px;
+    font-size: 77px;
+    font-family: Raleway;
+}
+
+.text-section p{
+    width: 1100px;
+    margin-bottom: 55px;
+    font-family: Raleway;
+    font-size: 34px;
+}
+.workplace-img{
+    width: 80%;
+    height: auto;
+}
+
+.card-layout{
+    font-family: Raleway;
     display: flex;
     justify-content: space-between;
+    width: calc(100% - 140px * 2);
+    margin: 0 auto;
+    margin-top: 162px;
+    margin-bottom: 236px;
 }
-.logo{
-    padding-left: -60px;
+.card-layout h2{
+    width: 480px;
+    font-family: Raleway;
+    color: white;
+    font-size: 55px;
+    padding-top: 63px;
+    padding-left: 57px;
+    padding-bottom: 50px;
 }
-p {
-    text-align: justify;
+.card-layout p{
+    width: 625px;
+    height: 222px;
+    font-family: Raleway;
+    color: white;
+    font-size: 28px;
+    padding-left: 50px;
 }
+.card-layout ul li{
+    font-family: Raleway;
+    color: white;
+    font-size: 26px;
+    padding-left: 57px;
+    margin-bottom: 15px;
+}
+.card-layout img{
+    height: 41%;
+    position: absolute;
+    padding-left: 355px;
+
+}
+.card{
+    font-family: Raleway;
+    width: 755px;
+    margin-right: 130px;
+    height: 990px;
+    position: relative;
+    background-color: #FCC242;
+    float: left;
+}
+
+.card:first-child .button{
+    background: #4C56C0;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+}
+
+.card:last-child{
+    background-color: #4C56C0;
+
+}
+
+.card:last-child .button {
+    background: #FCC242;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    
+}
+
+.card ul li{
+    list-style-type: none;
+    position: relative;
+}
+
+.card ul li:before{
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 8px;
+}
+
+.card .button{
+    position: absolute;
+    font-size: 26px;
+    left: 55px;
+    bottom: 90px;
+    display: inline-block;
+    background-color: #FCC242;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+.download{
+    display: flex;
+
+}
+
+.text-box h3{
+    margin-left: 140px;
+    width: 628px;
+    font-family: Raleway;
+    font-size: 48px;
+    margin-bottom: 53px;
+}
+.text-box p{
+    margin-left: 140px;
+    width: 628px;
+    font-family: Raleway;
+    font-size: 34px;
+    margin-bottom: 61px;
+
+}
+
+.hike{
+    padding-top: 200px;
+}
+
+.hike img{
+    margin-left: 140px;
+    
+}
+.trial{
+    background-color: #4C56C0;
+    width: 690px;
+    height: 795px;
+    margin-left: 186px;
+    margin-top: -517px;
+    padding-left: 43px;
+    padding-top: 78px;
+    position: relative;
+    z-index: 0;
+}
+.trial h2{
+    font-family: Raleway;
+    font-size: 93px;
+    width: 610px;
+    color: white;
+    margin-bottom: 53px;
+}
+.trial p{
+    width: 628px;
+    font-family: Raleway;
+    font-size: 42px;
+    color: white;
+    margin-bottom: 50px;
+}
+.trial button{
+    position: absolute;
+    font-family: Raleway;
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+    width: 190px;
+    padding-left: 43px;
+    padding-top: 616px;
+    padding-bottom: 127px;
+    display: inline-block;
+    background-color: #FCC242;
+    border-radius: 5px;
+    padding: 5px;
+}
+.download .download-img{
+    display: flex;
+    margin-left: 140px;
+}
+.download .startup{
+    margin-left: 75px;
+}
+
+.logo-group{
+    display: flex;
+    margin: 140px;
+}
+
+.testimonials{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 900px;
+}
+.testimonials h2{
+    margin-left: 1200px;
+    font-family: Raleway;
+    font-size: 48px;
+    width: 290px;
+    color: #000000;
+    margin-bottom: 60px; 
+}
+.testimonials-text p{
+    margin-left: 975px;
+    width: 735px;
+    font-family: Raleway;
+    color: #000000;
+    font-size: 34px;
+    text-align: center;
+}
+
+.quote{
+    position: absolute;
+    display: flex;
+    background: red;
+    min-height: 300px;
+    z-index: 0;
+}
+
+.quote .one{
+    position: absolute;
+    margin-left: 360px;
+    width: 389px;
+    height: 175px;
+    background-color:wheat;
+    border: 1px solid red;
+}
+.quote p{
+    position: relative;
+    width: 300px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #ACA8AF;
+
+}
+.one .foto-one{
+    margin-bottom: -33px;
+    padding-left: 162px;
+}
+.quote .two{
+    margin-left: 500px;
+    position: absolute;
+    width: 300px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #ACA8AF;
+    background-color:wheat;
+}
+.quote .foto-two{
+
+}
+.quote .thee{
+    margin-left: 1200px;
+    position: absolute;
+    width: 300px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #ACA8AF;
+    background-color:wheat;
+}
+.quote .foto-three{
+
+}
+.quote .four{
+    margin-left: 950px;
+    position: absolute;
+    width: 300px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #ACA8AF;
+    background-color:wheat;
+}
+.quote .foto-four{
+
+}
+.quote .five{
+    margin-left: 1500px;
+    position: absolute;
+    width: 300px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #ACA8AF;
+    background-color:wheat;
+}
+.quote div:before{
+    padding-bottom: 50px;
+    content: '"';
+    font-size: 300px;
+    color: #9A5EC8;
+}
+
+.quote.smaller div img{
+
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+}
+.footer .background{
+    position: absolute;
+    padding-bottom: 5263px;
+    z-index: -100;
+   margin-left: -513px;
+   margin-top: 0px;
+   margin-left: -513px;
+   margin-bottom: -650px;
+}
+hr{
+    size: 3px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
