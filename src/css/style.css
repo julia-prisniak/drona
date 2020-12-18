@@ -46,16 +46,15 @@ nav {
     margin-right: 70px;
     text-decoration: none;
     font-size: 23px;
-}
-.menu a:visited{
     color: #4A4A4A;
 }
 
-.user{
+.user a{
     font-family: Raleway;
     margin-left: auto;
     text-decoration: none;
     font-size: 23px;
+    color: #4A4A4A;
 }
 
 .user a , .user button{
@@ -121,12 +120,12 @@ nav {
     color: white;
     font-size: 26px;
     padding-left: 57px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 .card-layout img{
     height: 41%;
     position: absolute;
-    padding-left: 355px;
+    padding-left: 357px;
 
 }
 .card{
@@ -256,6 +255,10 @@ nav {
     border-radius: 5px;
     padding: 5px;
 }
+.trial a{
+    text-decoration: none;
+    color: white;
+}
 .download .download-img{
     display: flex;
     margin-left: 140px;
@@ -272,18 +275,20 @@ nav {
 .testimonials{
     position: relative;
     overflow: hidden;
-    padding-bottom: 900px;
+    padding-bottom: 1500px;
 }
+
 .testimonials h2{
-    margin-left: 1200px;
+    margin-left: 900px;
     font-family: Raleway;
     font-size: 48px;
     width: 290px;
     color: #000000;
     margin-bottom: 60px; 
 }
+
 .testimonials-text p{
-    margin-left: 975px;
+    margin-left: 675px;
     width: 735px;
     font-family: Raleway;
     color: #000000;
@@ -294,98 +299,219 @@ nav {
 .quote{
     position: relative;
     display: flex;
-    background: red;
-    min-height: 300px;
     z-index: 0;
+}
+
+.quote p{
+    font-family: Roboto;
+    font-size: 18px;
+    color: #ACA8AF;
+    z-index: 10;
 }
 
 .quote .one{
     position: absolute;
-    margin-left: 360px;
-    width: 389px;
-    height: 175px;
-    background-color:wheat;
-    border: 1px solid red;
+    left: 150px;
+    width: 385px;
+    height: 225px;
+    background-color: white;
+    border: 1px  white;
+    border-radius: 11px;
+    box-shadow: 0 0 25px #9A5EC8;
+    padding: 10px;
+    z-index: 2;
 }
-.quote p{
+.one p{
     position: absolute;
-    width: 300px;
-    font-family: Roboto;
-    font-size: 18px;
-    color: #ACA8AF;
-
+    left: 150px;
+   
 }
 .one .foto-one{
-    margin-bottom: -33px;
-    padding-left: 162px;
+    position: absolute;
+    left: 150px;
+    top: auto;
+    z-index: 5;
 }
 .quote .two{
-    margin-left: 500px;
     position: absolute;
+    left: 187px;
+    top: 657px;
     width: 300px;
-    font-family: Roboto;
-    font-size: 18px;
-    color: #ACA8AF;
-    background-color:wheat;
+    height: 175px;
+    background-color: white;
+    border: 1px  white;
+    border-radius: 11px;
+    box-shadow: 0 0 25px #9A5EC8;
+    padding: 10px;
+    z-index: 2;
+    
 }
-.quote .foto-two{
+.two p{
+    position: absolute;
+    left: 1450px;
+}
+ .two .foto-two{
+    position: absolute;
+    left: 1450px;
+    top: auto;
+    z-index: 5;
+}
 
-}
-.quote .thee{
-    margin-left: 1200px;
+.quote .three{
     position: absolute;
-    width: 300px;
-    font-family: Roboto;
-    font-size: 18px;
-    color: #ACA8AF;
-    background-color:wheat;
+    left: 700px;
+    top: 308px;
+    width: 580px;
+    height: 340px;
+    background-color: white;
+    border: 1px  white;
+    border-radius: 11px;
+    box-shadow: 0 0 25px #9A5EC8;
+    padding: 10px;
+    z-index: 2;
+}
+.three p{
+    position: absolute;
+    left: 350px;
+    width: 580px;
+    height: 340px;
 }
 .quote .foto-three{
-
-}
-.quote .four{
-    margin-left: 950px;
     position: absolute;
-    width: 300px;
-    font-family: Roboto;
-    font-size: 18px;
-    color: #ACA8AF;
-    background-color:wheat;
+    left: 350px;
+    top: auto;
+    z-index: 5;
+}
+
+.quote .four{
+    left: 750px;
+    position: absolute;
+    width: 386px;
+    height: 226px;
+    background-color: white;
+    border: 1px  white;
+    border-radius: 11px;
+    box-shadow: 0 0 10px #9A5EC8;
+    padding: 10px;
+    z-index: 2;
+}
+.four p{
+    position: absolute;
+    left: 750px;
+    width: 386px;
+    height: 226px;
 }
 .quote .foto-four{
-
-}
-.quote .five{
-    margin-left: 1500px;
     position: absolute;
-    width: 300px;
-    font-family: Roboto;
-    font-size: 18px;
-    color: #ACA8AF;
-    background-color:wheat;
+    left: 750px;
+    top: auto;
+    z-index: 5;
 }
-.quote div:before{
+
+.quote .five{
+    position: absolute;
+    top: 345px;
+    right: 157px;
+    width: 300px;
+    height: 175px;
+    background-color: white;
+    border: 1px  white;
+    border-radius: 11px;
+    box-shadow: 0 0 10px #9A5EC8;
+    padding: 10px;
+    z-index: 2;
+}
+.five p{
+    position: absolute;
+    top: 545px;
+    right: 250px;
+    width: 300px;
+    height: 175px;
+    z-index: 5;
+}
+.quote .foto-five{
+    position: absolute;
+    top: 545px;
+    right: 250px;
+    z-index: 5;
+}
+
+.quote div::before{
     padding-bottom: 50px;
     content: '"';
     font-size: 300px;
     color: #9A5EC8;
 }
 
-.quote.smaller div img{
-
+.footer .logo{
     position: absolute;
-    bottom: -50%;
-    left: 0;
+    z-index: 10;
+    top: 1250px;
+    left: 140px;
 }
-.wrap .background{
+
+.footer .contact-us{
+ position: absolute;
+ left: 555px;
+ top: 1230px;
+ font-family: Roboto;
+ font-size: 23px;
+}
+
+h3{
+    width: 165px;
+    font-family: Roboto;
+    font-size: 23px;
+    width: 140px;
+    color: white;
+    margin-bottom: 23px;
+}
+
+.footer ul li{
+    list-style-type: none;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 23px;
+}
+
+.contact-us a{
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 23px;
+    color: white;
+}
+
+.footer .our-company{
     position: absolute;
-    padding-bottom: 5263px;
-    z-index: -100;
-    margin-left: -513px;
-    margin-top: 0px;
-    margin-left: -513px;
-    margin-bottom: -650px;
-    overflow: hidden;
+    left: 1000px;
+    top: 1230px;
+    font-family: Roboto;
+    font-size: 23px;
+}
+
+.footer .law{
+    position: absolute;
+    left: 1250px;
+    top: 1275px;
+    font-family: Roboto;
+    font-size: 23px;
+}
+
+.footer .social-contacts{
+    position: absolute;
+    left: 1600px;
+    top: 1230px;
+    font-family: Roboto;
+    font-size: 23px;
+}
+
+.footer .background{
+    position: absolute;
+    z-index: -10;
+    left: - 15%;
+    right: -30%;
+    bottom: -45%;
+    z-index: -10;
 }
 
 
