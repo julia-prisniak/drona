@@ -299,6 +299,7 @@ nav {
 .quote{
     position: relative;
     display: flex;
+    height: 1000px;
     z-index: 0;
 }
 
@@ -313,7 +314,7 @@ nav {
     position: absolute;
     left: 150px;
     width: 385px;
-    height: 225px;
+    min-height: 225px;
     background-color: white;
     border: 1px  white;
     border-radius: 11px;
@@ -321,15 +322,20 @@ nav {
     padding: 10px;
     z-index: 2;
 }
-.one p{
-    position: absolute;
-    left: 150px;
-   
+.wrap{
+    position: relative;
+    border-top: 1px solid transparent;
 }
-.one .foto-one{
+.wrap p{
     position: absolute;
-    left: 150px;
-    top: auto;
+    top: 0;
+    text-align: center;
+}
+.wrap img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50%;
     z-index: 5;
 }
 .quote .two{
@@ -337,7 +343,7 @@ nav {
     left: 187px;
     top: 657px;
     width: 300px;
-    height: 175px;
+    min-height: 175px;
     background-color: white;
     border: 1px  white;
     border-radius: 11px;
@@ -346,74 +352,41 @@ nav {
     z-index: 2;
     
 }
-.two p{
-    position: absolute;
-    left: 1450px;
-}
- .two .foto-two{
-    position: absolute;
-    left: 1450px;
-    top: auto;
-    z-index: 5;
-}
 
 .quote .three{
     position: absolute;
     left: 700px;
     top: 308px;
     width: 580px;
-    height: 340px;
+    min-height: 340px;
     background-color: white;
     border: 1px  white;
     border-radius: 11px;
     box-shadow: 0 0 25px #9A5EC8;
     padding: 10px;
     z-index: 2;
-}
-.three p{
-    position: absolute;
-    left: 350px;
-    width: 580px;
-    height: 340px;
-}
-.quote .foto-three{
-    position: absolute;
-    left: 350px;
-    top: auto;
-    z-index: 5;
-}
+} 
 
 .quote .four{
-    left: 750px;
+    top: 579px;
+    left: 1270px;
     position: absolute;
     width: 386px;
-    height: 226px;
+    min-height: 226px;
     background-color: white;
     border: 1px  white;
     border-radius: 11px;
     box-shadow: 0 0 10px #9A5EC8;
     padding: 10px;
     z-index: 2;
-}
-.four p{
-    position: absolute;
-    left: 750px;
-    width: 386px;
-    height: 226px;
-}
-.quote .foto-four{
-    position: absolute;
-    left: 750px;
-    top: auto;
-    z-index: 5;
 }
 
 .quote .five{
     position: absolute;
     top: 345px;
-    right: 157px;
-    width: 300px;
-    height: 175px;
+    right: 100px;
+    width: 270px;
+    min-height: 175px;
     background-color: white;
     border: 1px  white;
     border-radius: 11px;
@@ -421,39 +394,41 @@ nav {
     padding: 10px;
     z-index: 2;
 }
-.five p{
-    position: absolute;
-    top: 545px;
-    right: 250px;
-    width: 300px;
-    height: 175px;
-    z-index: 5;
-}
-.quote .foto-five{
-    position: absolute;
-    top: 545px;
-    right: 250px;
-    z-index: 5;
-}
-
-.quote div::before{
+.quote .wrap::before{
     padding-bottom: 50px;
     content: '"';
     font-size: 300px;
     color: #9A5EC8;
-}
-
-.footer .logo{
+    opacity: 15%;
     position: absolute;
+}
+.testimonials .background{
+    position: absolute;
+    top: -30%;
+    left: -25%;
+    right: -15%;
+    z-index: -10;
+}
+.footer{
+    height: 450px;
+    background-color: #4C56C0;
+    display: flex;
+}
+.footer_top{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+.footer .logo{
+    width: 25%;
     z-index: 10;
     top: 1250px;
     left: 140px;
 }
 
 .footer .contact-us{
- position: absolute;
- left: 555px;
- top: 1230px;
+  width: 25%;
  font-family: Roboto;
  font-size: 23px;
 }
@@ -482,37 +457,26 @@ h3{
 }
 
 .footer .our-company{
-    position: absolute;
-    left: 1000px;
-    top: 1230px;
+    width: 25%;
     font-family: Roboto;
     font-size: 23px;
 }
 
 .footer .law{
-    position: absolute;
-    left: 1250px;
-    top: 1275px;
+    width: 25%;
     font-family: Roboto;
     font-size: 23px;
 }
 
 .footer .social-contacts{
-    position: absolute;
-    left: 1600px;
-    top: 1230px;
+    width: 25%;
     font-family: Roboto;
     font-size: 23px;
 }
-
-.footer .background{
-    position: absolute;
-    z-index: -10;
-    left: - 15%;
-    right: -30%;
-    bottom: -45%;
-    z-index: -10;
-}
+ .footer_bottom{
+     max-width: 1450px;
+     margin: 0 auto;
+ }
 
 
 
